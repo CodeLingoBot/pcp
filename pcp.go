@@ -117,7 +117,7 @@ func (p *PCP) ApplyDomino(curState Instance, dominoIndex int) (Instance, error) 
 	return Instance{}, errors.New("Domino not valid in apply Domino")
 }
 
-// Add Domino into PCP, will return the domino index.
+// AddDomino adds Domino into PCP, will return the domino index.
 // ex: p.AddDomino("abc","c") = 1, it means index is 1.
 // The index use for solution.
 func (p *PCP) AddDomino(strA, strB string) int {
